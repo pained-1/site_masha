@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weeknd{% block title %}{% endblock %}</title>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a class="nav-button" href='/2'>Гид по альбомам The Weeknd</a>
+            <a class="nav-button" href='/3'>Мерч артиста</a>
+            <a class="nav-button" href='/4'>Какашки</a>
+        </nav>
+    </header>
+
+
+
+<div class="container">
+    {% block content %}
+    {% endblock content %}
+</div>
+
+    <main class="container">
+        <section class="bio-content">
+            <h1 class="bio-title">Биография The Weeknd</h1>
+            <div class="bio-text">
+                <p><b>The Weeknd</b> — Феномен современной музыки</p>
+                <p>Абель Тесфайе, известный всему миру как The Weeknd, — канадский певец, автор песен и продюсер, чье новаторское звучание и артистическое видение принесли ему статус одного из самых влиятельных музыкантов нашего времени.</p>
+                <p>Начиная свой путь в 2010 году с анонимных загрузок на YouTube, The Weeknd быстро завоевал критическое и коммерческое признание своей трилогией микс-тейпов, объединенной мрачной атмосферой и лирикой, исследующей темы гедонизма и меланхолии.</p>
+                </p>Его уникальный стиль, сплавивший воедино альтернативный R&B, нью-вейв и эмбиент, открыл новую главу в поп-музыке.</p>
+                </p><b>На этом сайте вы найдете полную дискографию,мерч и материалы о творчестве артиста, покорившего мировые чарты и сердца миллионов поклонников.</b></p>
+            </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 15px;">
+    <div style="text-align: left;">
+        <img src="https://avatars.mds.yandex.net/i?id=1cc42bb968bc87f582ea876153f62fc4_l-5291460-images-thumbs&n=13" style="width: 100%; max-width: 300px; height: 250px; object-fit: cover;">
+    </div>
+    <div style="text-align: center;">
+        <img src="https://staticg.sportskeeda.com/editor/2025/06/ed42b-17495958615330-1920.jpg" style="width: 100%; max-width: 300px; height: 250px; object-fit: cover;">
+    </div>
+    <div style="text-align: right;">
+        <img src="https://cdn.ananasposter.ru/image/cache/catalog/poster/music/82/13918-1000x830.jpg" style="width: 100%; max-width: 300px; height: 250px; object-fit: cover;">
+    </div>
+
+       </main>
+
+        </section>
+</body>
+</html>
